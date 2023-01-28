@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-b border-gray-300 py-4 px-4">
+        <div class="container mx-auto flex items-center justify-between relative">
+            <image src="./header-left-dot-pattern.svg" width="88" class="absolute right-full -top-4 mr-12" alt="Shapes" />
+            <image src="./header-right-shapes.svg" width="141" class="absolute left-full -top-4 ml-12" alt="Shapes" />
+            <a href="/">
+                <image src="./logo.svg" width="291" alt="Enhance AI Logo" />
+            </a>
+            <nav>
+                <ul class="flex items-center">
+                    <li>
+                        <a href="#" class="px-4 py-3 md:px-6 md:py-3 md:text-lg transition hover:bg-gray-200 rounded-md active
+                        bg-gradient-to-r border-t-2 border-indigo-400
+                        bg-gradient-to-br from-purple-500 to-indigo-600 
+                        hover:from-green-600 hover:via-blue-700 hover:to-purple-700
+                        text-white flex md:inline-flex font-medium  cursor-pointer hover:shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 
+                                    0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 
+                                    21c-2.331 0-4.512-.645-6.374-1.766z" />
+                            </svg>Free Signup
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero py-4 py-8 md:py-24 relative">
+        <image src="./hero-top-right-dots.svg" width="118" class="absolute right-8 top-8" alt="Shapes" />
+        <div class="container mx-auto items-center justify-between relative text-center">
+            <h1 class="text-4xl md:text-7xl relative text-transparent bg-clip-text
+            bg-gradient-to-r from-green-400 to-purple-400 block text-center pb-2">
+                <span class="font-bold">AI</span> to write code, blogs & more
+            </h1>
+            <p class="md:text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-2">
+                Enhance everything you do by using the latest from OpenAI to
+                solve problems, write solutions and make life easier.
+            </p>
+            <a href="#" class="px-4 py-3 md:px-10 md:py-5 md:text-2xl 
+            transition hover:bg-gray-200 rounded-md active 
+            bg-gradient-to-r border-t-2 border-green-400
+            bg-gradient-to-br from-green-500 to-blue-600 
+            hover:from-green-600 hover:via-blue-700 hover:to-purple-700
+            text-white cursor-pointer hover:shadow-lg
+            inline-flex items-center mt-8">
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 ml-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="relative py-4">
+        <div class="container mx-auto">
+            <div class="rounded-xl border flex divide-x">
+                <div class="p-8 bg-gray-50 flex-grow">
+                    Test
+                </div>
+                <div class="p-8 bg-gray-100 flex-grow">
+                    Test
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
