@@ -31,7 +31,7 @@
     align-self: center;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     .home-main-section .img-wrapper {
         display: none;
     }
