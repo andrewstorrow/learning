@@ -1,10 +1,5 @@
 import { tweetsData } from './data.js'
-const tweetInput = document.getElementById('tweet-input')
-const tweetBtn = document.getElementById('tweet-btn')
-
-tweetBtn.addEventListener('click', function () {
-    console.log(tweetInput.value)
-})
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 document.addEventListener('click', function (e) {
     if (e.target.dataset.like) {
@@ -12,6 +7,12 @@ document.addEventListener('click', function (e) {
     }
     else if (e.target.dataset.retweet) {
         handleRetweetClick(e.target.dataset.retweet)
+    }
+    else if (e.target.dataset.reply) {
+        handleReplyClick(e.target.dataset.reply)
+    }
+    else if (e.target.id === 'tweet-btn') {
+        handleTweetBtnClick()
     }
 })
 
@@ -45,16 +46,30 @@ function handleRetweetClick(tweetId) {
     render()
 }
 
+function handleReplyClick(replyId) {
+    document.getElementById(`replies-${replyId}`).classList.toggle('hidden')
+}
 
+function handleTweetBtnClick() {
+    const tweetInput = document.getElementById('tweet-input')
 
-/*
-Challenge:
-1. Use the uuid stored in 'replyId' to take control 
-   of the div containing that tweet’s replies. 
-   (Check the HTML string below to remind yourself 
-   what id that div will have.)  
-2. Toggle the CSS class "hidden" on that div. 
-*/
+    if (tweetInput.value) {
+        tweetsData.unshift({
+            handle: `@Scrimba`,
+            profilePic: `images/scrimbalogo.png`,
+            likes: 0,
+            retweets: 0,
+            tweetText: tweetInput.value,
+            replies: [],
+            isLiked: false,
+            isRetweeted: false,
+            uuid: uuidv4()
+        })
+        render()
+        tweetInput.value = ''
+    }
+
+}
 
 function getFeedHtml() {
     let feedHtml = ``
