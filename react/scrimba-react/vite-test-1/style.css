@@ -6,3 +6,31 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
+
+nav {
+    background: #21222A;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+nav>img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav>h3 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    color: #61DAFB;
+    margin-right: auto;
+}
+
+nav>h4 {
+    color: #DEEBF8;
+    font-weight: 600;
+    font-size: 16px;
+}
