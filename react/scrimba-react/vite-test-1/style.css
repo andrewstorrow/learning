@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
 }
 
 body {
@@ -33,4 +35,29 @@ nav>h4 {
     color: #DEEBF8;
     font-weight: 600;
     font-size: 16px;
+}
+
+.container {
+    background: #282D35;
+    height: 100vh;
+}
+
+main>h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+main>ul {
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+main li {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
