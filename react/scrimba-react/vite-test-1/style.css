@@ -7,6 +7,7 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
+    background: #282D35;
 }
 
 nav {
@@ -38,8 +39,15 @@ nav>h4 {
 }
 
 .container {
-    background: #282D35;
     height: 100vh;
+}
+
+main {
+    background-image: url('./src/images/react-icon-large.png');
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    /* width: 100%;
+    margin: auto; */
 }
 
 main>h1 {
@@ -48,11 +56,13 @@ main>h1 {
     font-size: 40px;
     margin-top: 60px;
     margin-left: 30px;
+    letter-spacing: -0.05em;
 }
 
 main>ul {
     margin-top: 45px;
     margin-left: 50px;
+    max-width: 400px;
 }
 
 main li {
@@ -60,4 +70,9 @@ main li {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+main li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
 }
